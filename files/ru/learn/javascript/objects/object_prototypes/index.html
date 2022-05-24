@@ -41,7 +41,7 @@ original_slug: Learn/JavaScript/Объекты/Object_prototypes
 
 <h2 id="Язык_основанный_на_прототипах">Язык основанный на прототипах?</h2>
 
-<p>JavaScript часто описывают как язык <strong>прототипного наследования</strong> — каждый объект, имеет <strong>объект-прототип</strong>, который выступает как шаблон, от которого объект наследует методы и свойства. Объект-прототип так же может иметь свой прототип и наследовать его свойства и методы и так далее. Это часто называется <strong>цепочкой прототипов </strong>и объясняет почему одним объектам доступны свойства и методы которые определены в других объектах.</p>
+<p>JavaScript часто описывают как язык <strong>прототипного наследования</strong> — каждый объект имеет <strong>объект-прототип</strong>, который выступает как шаблон, от которого объект наследует методы и свойства. Объект-прототип так же может иметь свой прототип и наследовать его свойства и методы и так далее. Это часто называется <strong>цепочкой прототипов </strong>и объясняет, почему одним объектам доступны свойства и методы, которые определены в других объектах.</p>
 
 <p>Точнее, свойства и методы определяются в свойстве <code>prototype</code> функции-конструктора объектов, а не в самих объектах.</p>
 
@@ -75,11 +75,11 @@ original_slug: Learn/JavaScript/Объекты/Object_prototypes
 
 <pre class="brush: js">var person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);</pre>
 
-<p>Если вы наберёте «<code>person1.</code>» в вашей консоли JavaScript, вы должны увидеть, что браузер пытается автоматически заполнить это с именами участников, доступных на этом объекте:</p>
+<p>Если вы наберёте «<code>person1.</code>» в вашей консоли JavaScript, то увидите, что браузер пытается автоматически подставить имена полей, доступных на этом объекте:</p>
 
 <p><img alt="" src="https://mdn.mozillademos.org/files/13853/object-available-members.png" style="display: block; margin: 0 auto;"></p>
 
-<p>В этом списке вы увидите элементы, определённые в конструкторе person 1 — Person() — <code>name</code>, <code>age</code>, <code>gender</code>, <code>interests</code>, <code>bio</code>, и <code>greeting</code>. Однако вы также увидите некоторые другие элементы — <code>watch</code>, <code>valueOf</code>и т. д. — они определены в объекте прототипа Person (), который является <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>.</p>
+<p>В этом списке вы увидите элементы, определённые в конструкторе person 1 — Person() — <code>name</code>, <code>age</code>, <code>gender</code>, <code>interests</code>, <code>bio</code>, и <code>greeting</code>. Однако вы также увидите некоторые другие поля — <code>watch</code>, <code>valueOf</code>и т. д. — они определены в объекте прототипа Person (), который является <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>.</p>
 
 <p><img alt="" src="https://mdn.mozillademos.org/files/13891/MDN-Graphics-person-person-object-2.png" style="display: block; height: 150px; margin: 0px auto; width: 700px;"></p>
 
